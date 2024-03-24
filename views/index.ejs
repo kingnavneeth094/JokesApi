@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Changing Background</title>
+</head>
+<body>
+    <header>
+        <h1>DARK JOKES 🕶️</h1>
+    </header>
+    <div class="card">
+        <h2>Card Title</h2>
+        <%if(locals.secret){%>
+            <p><h3><b><%= secret %></b></h3></p>
+        <%  }else{ %>
+            <p>JOKE 🤣</p>
+        <%}%>
+    </div>
+
+    <form method="POST">
+      <input id="b" type="submit" value="SEXIST 🤫" formaction="/sex">
+      <input id="c" type="submit" value="RELIGIOUS 😡" formaction="/rel">
+      <input id="d" type="submit" value="POLITICAL 👮" formaction="/pol">
+      <input id="e" type="submit" value="RACIST 👱🏿" formaction="/ras">
+    </form>
+
+    <footer>
+        <p>&copy; NAVNEETH</p>
+    </footer>
+
+    <script>
+        // Function to generate a random hex color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to change the background color
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+
+        // Change the background color every 3 seconds (adjust as needed)
+        setInterval(changeBackgroundColor, 2000);
+
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Update the footer with the current year
+        document.querySelector('footer p').textContent = ` ©️ ${currentYear} NAVNEETH`;
+    </script>
+</body>
+</html>
+
+
+

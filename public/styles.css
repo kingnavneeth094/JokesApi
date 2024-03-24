@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: 20px;
+}
+
+#b{
+    background-color: #3498db;
+}
+#c{
+    background-color: red;
+}
+#d{
+    background-color: palevioletred;
+}
+#e{
+    background-color: orange;
+}
+
+#b,#c,#d,#e{
+    /* Add your desired styles here */
+ /* Set the background color */
+    color: #ffffff; /* Set the text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Set the font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  #b:hover {
+    background-color: papayawhip; /* Change background color on hover */
+  }
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem;
+    max-width: 400px;
+    width: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+}
